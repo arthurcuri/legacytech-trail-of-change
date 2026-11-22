@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "legacytech-trail-of-change"
+version = "0.1.0"
+description = "Análise de impacto e triagem de dívida técnica em sistemas legados Python"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+
+[project.scripts]
+rastro-de-mudanca = "rastro_de_mudanca.cli:main"
+
+[tool.setuptools]
+packages = ["rastro_de_mudanca"]
+
+[tool.setuptools.package-data]
+rastro_de_mudanca = ["dados/*.json", "exemplos/pedidos/*.py", "exemplos/pedidos/*.json"]

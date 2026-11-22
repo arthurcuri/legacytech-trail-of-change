@@ -1,0 +1,26 @@
+{
+  "testes": [
+    "Faltam testes para o fluxo de cancelamento e estorno.",
+    "O caso de regressão não tem cobertura automatizada.",
+    "Não há teste de integração para o processamento do pedido.",
+    "A suíte não verifica os casos de erro e os valores de limite.",
+    "Adicionar testes de regressão antes de alterar o cálculo.",
+    "Só existe validação manual; faltam testes automatizados."
+  ],
+  "documentação": [
+    "O contrato da API está desatualizado na documentação.",
+    "A regra de negócio não consta no manual de operação.",
+    "A política de cobrança precisa ser documentada no guia.",
+    "O README omite a configuração obrigatória de produção.",
+    "O manual contradiz o comportamento atual do código.",
+    "Documentação incompleta sobre a regra de autorização."
+  ],
+  "implementação": [
+    "O código duplica a lógica em vários módulos.",
+    "A função mistura responsabilidades e contém muitos condicionais.",
+    "Valores fixos no código geram repetição no cálculo.",
+    "O método cresceu demais e concentra regras duplicadas.",
+    "A lógica duplicada dificulta manter a implementação consistente.",
+    "A condição redundante torna a função difícil de modificar."
+  ]
+}

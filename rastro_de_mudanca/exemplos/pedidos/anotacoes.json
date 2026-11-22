@@ -1,0 +1,22 @@
+[
+  {
+    "id": "PED-18",
+    "funcao": "calcular_total",
+    "texto": "A regra do frete antes do desconto não consta no manual de cobrança."
+  },
+  {
+    "id": "PED-27",
+    "funcao": "fechar_pedido",
+    "texto": "Faltam testes de regressão para o valor cobrado no limite do frete."
+  },
+  {
+    "id": "PED-31",
+    "funcao": "gerar_recibo",
+    "texto": "O recibo deve ser impresso em papel azul."
+  },
+  {
+    "id": "EST-04",
+    "funcao": "validar_estoque",
+    "texto": "O manual do estoque não foi atualizado após a regra de reserva."
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {"classe": "testes", "texto": "A suíte de integração não tem casos que verifiquem o estorno."},
+  {"classe": "testes", "texto": "Precisamos de testes automatizados no caminho de erro."},
+  {"classe": "documentação", "texto": "O guia publicado descreve uma política antiga de autorização."},
+  {"classe": "documentação", "texto": "O README ficou desatualizado após a mudança na configuração."},
+  {"classe": "implementação", "texto": "A duplicação da lógica diverge entre dois módulos."},
+  {"classe": "implementação", "texto": "A função mistura cálculo de tarifa e persistência numa condição."},
+  {"classe": "revisão humana", "texto": "Imprimir etiqueta roxa amanhã."},
+  {"classe": "revisão humana", "texto": "Manual, testes e função precisam de revisão conjunta."}
+]

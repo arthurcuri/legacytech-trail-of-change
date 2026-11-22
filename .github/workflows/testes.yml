@@ -1,0 +1,30 @@
+name: Testes
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.9', '3.13']
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Instalar o pacote
+        run: python -m pip install .
+      - name: Testar o analisador e o classificador
+        run: python -m unittest discover -s tests -v
+      - name: Testar o sistema legado simulado
+        run: python -m unittest discover -s rastro_de_mudanca/exemplos/pedidos -v
+      - name: Executar a demonstração instalada
+        run: |
+          rastro-de-mudanca calcular_total
+          rastro-de-mudanca --avaliar
